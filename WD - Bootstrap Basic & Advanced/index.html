@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Interaction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Customer Interaction System</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Form</a>
+</nav>
+
+<!-- ✅ Slider Added -->
+<div class="slider">
+    <img src="IMG.jpg" alt="Slider Image">
+</div>
+
+<section class="container">
+
+    <!-- ✅ Login Form Added -->
+    <h2>Login</h2>
+    <form>
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password">
+
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Complaint Form</h2>
+
+    <form id="myForm">
+
+        <!-- ✅ Labels Added -->
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        <span class="error" id="nameError"></span>
+
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="Enter Phone">
+        <span class="error" id="phoneError"></span>
+
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Enter Email">
+        <span class="error" id="emailError"></span>
+
+        <label>Vehicle</label>
+        <input type="text" id="vehicle" placeholder="Vehicle">
+        <span class="error" id="vehicleError"></span>
+
+        <label>Complaint</label>
+        <textarea id="complaint" placeholder="Complaint"></textarea>
+        <span class="error" id="complaintError"></span>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <!-- ✅ Success message -->
+        <p id="successMsg" class="success"></p>
+    </form>
+
+    <h2>Submissions</h2>
+    <table border="1" id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Vehicle</th>
+                <th>Complaint</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <p id="noData"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
